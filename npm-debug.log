@@ -1,0 +1,94 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'install', 'bl' ]
+2 info using npm@1.4.3
+3 info using node@v0.10.26
+4 verbose cache add [ 'bl', null ]
+5 verbose cache add name=undefined spec="bl" args=["bl",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'bl',
+6 verbose parsed url   path: 'bl',
+6 verbose parsed url   href: 'bl' }
+7 silly lockFile f55fb781-bl bl
+8 verbose lock bl /home/malea/.npm/f55fb781-bl.lock
+9 silly lockFile f55fb781-bl bl
+10 silly lockFile f55fb781-bl bl
+11 verbose addNamed [ 'bl', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile f83e65ee-bl bl@
+14 verbose lock bl@ /home/malea/.npm/f83e65ee-bl.lock
+15 silly addNameRange { name: 'bl', range: '*', hasData: false }
+16 verbose url raw bl
+17 verbose url resolving [ 'https://registry.npmjs.org/', './bl' ]
+18 verbose url resolved https://registry.npmjs.org/bl
+19 info trying registry request attempt 1 at 16:20:20
+20 verbose etag "N8WIG8OKK0LMUKG7BRFOJHNM"
+21 http GET https://registry.npmjs.org/bl
+22 http 304 https://registry.npmjs.org/bl
+23 silly registry.get cb [ 304,
+23 silly registry.get   { date: 'Fri, 11 Apr 2014 20:20:20 GMT',
+23 silly registry.get     server: 'Apache',
+23 silly registry.get     via: '1.1 varnish',
+23 silly registry.get     'last-modified': 'Fri, 11 Apr 2014 20:20:20 GMT',
+23 silly registry.get     'cache-control': 'max-age=1',
+23 silly registry.get     etag: '"N8WIG8OKK0LMUKG7BRFOJHNM"',
+23 silly registry.get     'x-served-by': 'cache-v44-ASH',
+23 silly registry.get     'x-cache': 'MISS',
+23 silly registry.get     'x-cache-hits': '0',
+23 silly registry.get     'x-timer': 'S1397247620.685599327,VS0,VE8',
+23 silly registry.get     vary: 'Accept',
+23 silly registry.get     'content-length': '0',
+23 silly registry.get     'keep-alive': 'timeout=10, max=50',
+23 silly registry.get     connection: 'Keep-Alive' } ]
+24 verbose etag bl from cache
+25 silly addNameRange number 2 { name: 'bl', range: '*', hasData: true }
+26 silly addNameRange versions [ 'bl',
+26 silly addNameRange   [ '0.0.0',
+26 silly addNameRange     '0.1.0',
+26 silly addNameRange     '0.1.1',
+26 silly addNameRange     '0.2.0',
+26 silly addNameRange     '0.3.0',
+26 silly addNameRange     '0.4.0',
+26 silly addNameRange     '0.4.1',
+26 silly addNameRange     '0.4.2',
+26 silly addNameRange     '0.5.0',
+26 silly addNameRange     '0.6.0',
+26 silly addNameRange     '0.7.0',
+26 silly addNameRange     '0.8.0' ] ]
+27 verbose addNamed [ 'bl', '0.8.0' ]
+28 verbose addNamed [ '0.8.0', '0.8.0' ]
+29 silly lockFile ac0d8d32-bl-0-8-0 bl@0.8.0
+30 verbose lock bl@0.8.0 /home/malea/.npm/ac0d8d32-bl-0-8-0.lock
+31 silly lockFile 2ddc7db2-gistry-npmjs-org-bl-bl-0-8-0-tgz https://registry.npmjs.org/bl/-/bl-0.8.0.tgz
+32 verbose lock https://registry.npmjs.org/bl/-/bl-0.8.0.tgz /home/malea/.npm/2ddc7db2-gistry-npmjs-org-bl-bl-0-8-0-tgz.lock
+33 verbose addRemoteTarball [ 'https://registry.npmjs.org/bl/-/bl-0.8.0.tgz',
+33 verbose addRemoteTarball   '378b1c638b5ea57467e57c4f33a36ff6761f18fa' ]
+34 silly lockFile 2ddc7db2-gistry-npmjs-org-bl-bl-0-8-0-tgz https://registry.npmjs.org/bl/-/bl-0.8.0.tgz
+35 silly lockFile 2ddc7db2-gistry-npmjs-org-bl-bl-0-8-0-tgz https://registry.npmjs.org/bl/-/bl-0.8.0.tgz
+36 silly lockFile ac0d8d32-bl-0-8-0 bl@0.8.0
+37 silly lockFile ac0d8d32-bl-0-8-0 bl@0.8.0
+38 silly lockFile f83e65ee-bl bl@
+39 silly lockFile f83e65ee-bl bl@
+40 error Error: EACCES, mkdir '/home/malea/tmp/npm-3833-3VV4qJwF'
+40 error  { [Error: EACCES, mkdir '/home/malea/tmp/npm-3833-3VV4qJwF']
+40 error   errno: 3,
+40 error   code: 'EACCES',
+40 error   path: '/home/malea/tmp/npm-3833-3VV4qJwF' }
+41 error Please try running this command again as root/Administrator.
+42 error System Linux 3.5.0-45-generic
+43 error command "/usr/local/bin/node" "/usr/local/bin/npm" "install" "bl"
+44 error cwd /home/malea/Dropbox/learnyounode
+45 error node -v v0.10.26
+46 error npm -v 1.4.3
+47 error path /home/malea/tmp/npm-3833-3VV4qJwF
+48 error code EACCES
+49 error errno 3
+50 error stack Error: EACCES, mkdir '/home/malea/tmp/npm-3833-3VV4qJwF'
+51 verbose exit [ 3, true ]
