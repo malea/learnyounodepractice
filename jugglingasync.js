@@ -11,13 +11,13 @@ urls.push(url3);
 
 //Create a hash for each url 
 var count = 3, completed = {};
-completed[url1] = "";
+completed[url1] = ""; 
 completed[url2] = "";
 completed[url3] = "";
 
 function jugglingAsync(urls, next) {
-    urls.forEach(function (url) { 
-        http.get(url, function (response) {
+    urls.forEach(function (url) { //for each url in the array
+        http.get(url, function (response) { //call http.get
             response.on("err", function (err) {
                 console.error(err);
             });
@@ -29,7 +29,7 @@ function jugglingAsync(urls, next) {
             response.on("end", function (end) {
                 count--;
                 if (count <= 0) { //if the last callback needed was received
-                    next(completed);
+                    next(completed); //it is time to print
                 }
             });
         });
@@ -37,6 +37,8 @@ function jugglingAsync(urls, next) {
  
 }
 
+//function that prints the contents of each url, in order they were supplied
+//on the command line
 function printUrl (completed) {
     console.log(completed[url1]);
     console.log(completed[url2]);
